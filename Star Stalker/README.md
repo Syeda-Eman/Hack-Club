@@ -1,9 +1,6 @@
 # ⭐ Star Stalker – Catch the Stars, Avoid the Bombs
 
-A fast‑paced arcade game built in pure HTML, CSS, and JavaScript.  
-**Single file**, no dependencies, runs instantly in any browser – perfect for hackathons.
-
-![Game Screenshot](https://via.placeholder.com/600x400?text=Star+Stalker+Gameplay)
+A fast‑paced arcade game built in pure HTML
 
 ---
 
