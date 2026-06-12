@@ -163,6 +163,90 @@
                     i--;
                 }
             }
-            
+            for (let i = 0; i < bombs.length; i++){
+                let b = bombs[i];
+                let itemLeft = b.x;
+                let itemRight = b.x+ITEM_SIZE;
+                let itemTop = b.y;
+                let itemBottom = b.y + ITEM_SIZE;
+                if (itemRight > basketLeft && itemLeft < basketRight &&
+                    itemBottom > basketTop && itemTop < basketBottom) {
+                    gameRunning = false;
+                    return;
+                }
+
+            }
+        }
+        function updateItems() {
+            for (let i=0; i<stars.length; i++) {
+                stars[i].y += speed;
+                if (stars[i].y > H){
+                    stars.splice(i,1);
+                    i--;
+                }
+            }
+            for (let i=0; i<bombs.length; i++) {
+                bombs[i].y += speed;
+                if (bombs[i].y > H) {
+                    bombs.splice(i,1);
+                    i--;
+                }
+            }
+            spawnCounter++;
+            if (spawnCounter >= spawnDelay) {
+                spawnCounter = 0;
+                spawnItem();
+            }
+        }
+        function updateGame() {
+            if (!gameRunning) return;
+            basketX = mouseX;
+            if (basketX < 0) basketX = 0;
+            if (basketX > W - BASKET_W) basketX = W - BASKET_W;
+
+            checkCollisions();
+            updateItems();
+        }
+        function drawBackground() {
+            const grad = ctx.createLinearGradient(0, 0, 0, H);
+            grad.addColorStop(0, '#1a2a3a');
+            grad.addColorStop(1, '#2c4c5c');
+            ctx.fillStyle = grad;
+            ctx.fillRect(0, 0, W, H);
+            for (let i=0; i<80; i++) {
+                if (i%2 === 0) continue;
+                ctx.fillRect((i*23)%W, (i*13)%H, 2,2);
+            }
+        } 
+        function drawBasket() {
+            ctx.fillStyle = '#c97e3a';
+            ctx.shadowBlur = 4;
+            ctx.fillRect(basketX, BASKET_Y, BASKET_W, BASKET_H);
+            ctx.fillStyle = '#e5a050';
+            for (let i=0; i<4; i++) {
+                ctx.fillRect(basketX+10+i*15, BASKET_Y-4, 4, 12);
+            }
+            ctx.shadowBlur = 0;
+        }
+        function drawStars() {
+            for (let s of stars) {
+                ctx.fillStyle = '#ffffffaa'
+                for (let i=0; i<80; i++) {
+                    if (i%2 === 0) continue;
+                    ctx.fillRect((i*23)%W, (i*13)%H, 2,2);
+                }
+            }
+            function drawBasket(){
+                ctx.fillStyle = '#c97e3a';
+                ctx.shadowBlur = 4;
+                ctx.fillRect(basketX, BASKET_Y, BASKET_W, BASKET_H);
+                ctx.fillStyle = '#e5a050';
+                ctx.fillRect(basketX+5, BASKET_Y-8, BASKET_W-10, 8);
+                ctx.fillStyle = '#8b5a2b';
+                for (let i=0; i<4; i++) {
+                    ctx.fillRect(basketX+10+i*15, BASKET_Y-4, 4, 12);
+                }
+                ctx.shadowBlur = 0;
+            }
         }
     })
