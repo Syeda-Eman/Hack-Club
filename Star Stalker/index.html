@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Star Stalker</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            user-select: none;
+        }
+        body {
+            background: linear-gradient(145deg, #0a1f2e 0%, #0a2f3f 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            font-family: 'Courier New', monospace;
+            padding: 20px;
+        }
+        .game-container {
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            gap:20px;
+        }
+        canvas {
+            display: block;
+            width: 100%;
+            max-width: 700px;
+            height: auto;
+            border-radius: 24px;
+            box-shadow: 0 20px 30px rgba(0,0,0,0.3), 0 0 0 4px #f9e45b, 0 0 0 8px #1e2a2e;
+            cursor: pointer;
+        }
+        .info-panel {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+            background: #1e2a2e;
+            padding: 12px 32px;
+            border-radius: 80px;
+            width: 100%;
+            max-width: 50px;
+        }
+        .score-card {
+            background: #000000aa;
+            padding: 8px 28px;
+            border-radius: 50px;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #f9e45b;
+            text-shadow: 0 0 6px #ffaa00;
+        }
+        .restart-btn {
+            background: #f9e45b;
+            border: none;
+            font-size: 1.2rem;
+            padding: 8px 24px;
+            border-radius: 50px;
+            font-family: monospace;
+            cursor: pointer;
+            box-shadow: 0 4px 0 #ad8e1a;
+        }
+        .restart-btn:active {
+            transform: translateY(2px);
+            box-shadow: 0 2px 0 #ad8e1a;
+        }
+        .controls {
+            font-size: 0.85rem;
+            background: #2c3e2b;
+            padding: 8px 20px;
+            border-radius: 40px;
+            color: #f0f2c0;
+        }
+        @media (max-width: 600px) {
+            .score-card { font-size: 1.4rem; padding: 5px 16px; }
+            .restart-btn { font-size: 0.9rem; padding: 6px 16px; }
+            .controls { font-size: 0.7rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="game-container">
+    <canvas id="gameCanvas" width="650" height="500"></canvas>
+    <div class="info-panel">
