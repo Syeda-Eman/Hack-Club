@@ -12,7 +12,7 @@ A fast-paced, one‑file HTML5 game inspired by Flappy Bird. Control the bird, d
 - **Game Over**: Hit the ground, ceiling, or any pipe.
 - **Restart**: Click the **FLAP AGAIN** button or press any control after game over.
 
-**Note**: If you see the first pipe blocked, then try refreshing the page.
+# **Note**: **If you see the first pipe blocked, then try refreshing the page.**
 
 ## 🚀 Getting Started
 
