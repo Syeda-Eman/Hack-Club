@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUTILE</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Comic Sans MS', cursive, monospace;
+            text-align: center;
+            padding: 20px;
+        }
+        .box {
+            background: white;
+            border-radius: 50px;
+            padding: 50px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            max-width: 500px;
+        }
+        button{
+            background: #ff6b6b;
+            border: none;
+            font-size: 1.5rem;
+            padding: 15px 30px;
+            border-radius: 60px;
+            cursor: pointer;
+            font-family: monospace;
+            margin: 20px;
+            transition: 0.1s;
+        }
+        button:active {
+            transform: scale(0.95);
+        }
+        .counter {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #ff6b6b;
+            margin: 20px;
+        }
+        .message {
+            font-size: 1.2rem;
+            color: #666;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="'box">
+    <h1>🤡USELESS BUTTON🤡</h1>    
+    <div class="counter" id="countDisplay">0</div>
+    <button id="uselessBtn">👉 CLICK ME 👈</button>
+    <div class="message" id="msgDisplay">This button does nothing useful</div>
+</div>
+
+<script>
+    let clicks =0;
+    const btn = document.getElementById('uselessBtn');
+    const countDisplay = document.getElementById('countDisplay');
+    const msgDisplay = document.getElementById('msgDisplay');
+
+    const messages = [
+        "Useless!",
+        "Still useless",
+        "You are wasting your time",
+        "Why are you still here?",
+        "Seriously?",
+        "Come on",
+        "What are you doing?",
+        "Stop it!",
+        "Stoppp!",
+        "I said, stop!",
+        "No way!",
+        "Still here huh",
+        "It's just a button",
+        "Did anything happened?",
+        "I said it's useless",
+        "This won't change your life",
+        "Congrats, you clicked",
+        "Nothing happened and...",
+        "Nothing is going to happen",
+        "Okay so you are dedicated or...",
+        "Maybe just free",
+        "Take a break!",
+        "???",
+        "How??"
+    ];
+    btn.addEventListener('click', () => {
+        clicks++;
+        countDisplay.innerText = clicks;
+        let randomMsg = messages[Math.floor(Math.random() * messages.length)];
+        msgDisplay.innerText = randomMsg;
+
+        if (clicks == 10) {
+            msgDisplay.innerText = "🎉 You clicked 10 times! Still useless though 🎉";
+        }
+        if (clicks === 25) {
+            msgDisplay.innerText = "25 clicks. Have you considered it a hobby?";
+        }
+        if (clicks === 50) {
+            msgDisplay.innerText = "50 clicks, I am genuinely impressed by your patience";
+        }
+        if (clicks === 100) {
+            msgDisplay.innerText = "💀 100 CLICKS! You win absolutely nothing 💀";
+        }
+    });
+</script>
+</body>
+</html>
+
+
+
+
