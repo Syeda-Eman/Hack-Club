@@ -1,9 +1,8 @@
-# 😐 Useless Button – The Most Pointless Website Ever
+# 😐 Futile – The Most Pointless Website Ever
 
 A website that does absolutely nothing useful.  
 Click a button. Watch numbers go up. Read random messages. Achieve nothing.
 
-![Useless Button Screenshot](https://via.placeholder.com/400x300?text=Just+A+Button)
 
 ---
 
@@ -29,16 +28,3 @@ This website exists to:
 
 **That's it. No goals. No rewards. No meaning.**
 
----
-
-## ✨ Features
-
-- **Big useless button** – begging to be clicked
-- **Click counter** – tracks your wasted effort
-- **Random sarcastic messages** – judges your life decisions
-- **Special messages** at 10, 25, 50, and 100 clicks
-- **Zero functionality** – works as intended
-
----
-
-## 📁 File Structure
