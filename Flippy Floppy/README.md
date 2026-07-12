@@ -39,3 +39,5 @@ const JUMP_POWER = -5.5;    // More negative = stronger flap
 const PIPE_GAP = 190;       // Increase for easier gameplay
 const PIPE_SPACING = 230;   // Distance between pipe pairs
 const GROUND_LEVEL = H-65;  // Raise/lower the ground
+
+## Demo URL: https://user-cdn.hackclub-assets.com/019eb74b-28bb-7a29-8b00-b946d67e97d4/index.html
