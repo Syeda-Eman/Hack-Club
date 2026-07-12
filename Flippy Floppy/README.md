@@ -29,16 +29,4 @@ A fast-paced, one‑file HTML5 game inspired by Flappy Bird. Control the bird, d
 - **Increasing Speed**: Every 5 points, the scroll speed increases slightly, making the game progressively harder.
 - **Score Display**: Shows your current score at the top‑left and in the bottom panel.
 
-## 🛠️ Customization (Easy Tweaks)
-
-Open the file in any text editor and adjust these constants at the top of the `<script>`:
-
-```javascript
-const GRAVITY = 0.2;        // Lower = lighter gravity
-const JUMP_POWER = -5.5;    // More negative = stronger flap
-const PIPE_GAP = 190;       // Increase for easier gameplay
-const PIPE_SPACING = 230;   // Distance between pipe pairs
-const GROUND_LEVEL = H-65;  // Raise/lower the ground
-
---------------------
-# Demo URL: https://user-cdn.hackclub-assets.com/019eb74b-28bb-7a29-8b00-b946d67e97d4/index.html
+## Demo URL: https://user-cdn.hackclub-assets.com/019eb74b-28bb-7a29-8b00-b946d67e97d4/index.html
