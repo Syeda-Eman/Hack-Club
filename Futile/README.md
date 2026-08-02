@@ -1,4 +1,4 @@
-# 😐 Futile – The Most Pointless Website Ever
+# Futile – The Most Pointless Website Ever
 
 A website that does absolutely nothing useful.  
 Click a button. Watch numbers go up. Read random messages. Achieve nothing.
@@ -6,7 +6,7 @@ Click a button. Watch numbers go up. Read random messages. Achieve nothing.
 
 ---
 
-## 🎯 Purpose
+## Purpose
 
 There is none. That's the point.
 
@@ -18,7 +18,7 @@ This website exists to:
 
 ---
 
-## 🎮 How to Use
+## How to Use
 
 1. Open the website
 2. Click the button
