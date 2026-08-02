@@ -8,9 +8,9 @@ A fast-paced, game inspired by Flappy Bird. Control the bird, dodge pipes, and g
 - **Game Over**: Hit the ground, ceiling, or any pipe.
 - **Restart**: Click the FLAP AGAIN button or press any control after game over.
 
-# **Note**: **If you see the first pipe blocked, then try refreshing the page.**
+### **Note**: **If you see the first pipe blocked, then try refreshing the page.**
 
-## 🚀 Getting Started
+## Getting Started
 
 1. Save the game code as `index.html.`
 2. Double‑click the file – it opens in your default web browser.
