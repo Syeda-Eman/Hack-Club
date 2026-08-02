@@ -27,3 +27,9 @@ This website exists to:
 
 **That's it. No goals. No rewards. No meaning.**
 
+---
+
+## Tech stack
+Pure HTML used
+
+### Share it with your friends and let them struggle
